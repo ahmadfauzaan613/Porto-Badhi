@@ -17,17 +17,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 
-    @media (max-width: 767px) {
-        header {
-            background-size: 100%;
-            background-size: cover;
-            background-attachment: fixed;
-            background-blend-mode: multiply;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    }
-
     .navbar {
         .navbar-nav {
             .nav-item {
@@ -70,17 +59,6 @@ header {
             font-weight: normal;
             font-size: 24px;
             color: #7E7E7E;
-
-        }
-
-        @media (max-width: 767px) {
-            h1 {
-                font-family: Poppins;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 60px;
-                color: #FFFFFF;
-            }
         }
     }
 }
@@ -95,17 +73,6 @@ header {
         font-weight: 800;
         font-size: 76px;
         color: #000000;
-    }
-
-    @media (max-width: 767px) {
-        h1 {
-            margin-top: 40px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: 800;
-            font-size: 60px;
-            color: #000000;
-        }
     }
 
     p {
@@ -126,7 +93,9 @@ header {
             transform: scale(1.1);
         }
     }
+
 }
+
 
 .film {
     .filmografi {
@@ -139,7 +108,6 @@ header {
             color: #000000;
             margin-bottom: 50px;
         }
-
     }
 
     .director {
@@ -182,32 +150,6 @@ header {
                 color: #ffffff;
             }
         }
-
-
-        @media (max-width: 575.98px) {
-            h1 {
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: 800;
-                font-size: 50px;
-                color: #1C1C1C;
-                padding-bottom: 50px;
-                padding-top: 60px;
-                -webkit-text-stroke: 1px rgb(255, 255, 255);
-
-            }
-
-            .filmposter {
-                img {
-                    align-items: center !important;
-                    width: 80%;
-                    padding-bottom: 15px;
-                }
-            }
-        }
-
-        @media (min-width: 1200px) {}
-
     }
 }
 
@@ -312,3 +254,173 @@ header {
 }
 
 // PAGE2
+
+// Mobile
+@media (max-width: 575.98px) {
+    header {
+        background-image: url("../Images/bad.jpg");
+        padding-bottom: 280px;
+        background-size: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .navbar {
+            .navbar-nav {
+                .nav-item {
+                    justify-content: center !important;
+
+                    .nav-link {
+                        padding-right: 30px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .judul {
+            text-align: center;
+            margin-top: 280px;
+
+            h5 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                color: #7E7E7E;
+            }
+
+            h1 {
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 82px;
+                color: #FFFFFF;
+            }
+
+            h4 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 24px;
+                color: #7E7E7E;
+            }
+        }
+    }
+
+    .about {
+        h1 {
+            margin-top: 40px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 76px;
+            color: #000000;
+        }
+
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            text-align: justify;
+            font-size: 16px;
+            color: #000000;
+        }
+
+        img {
+            margin-top: 40px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform .5s ease;
+            justify-content: center;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    .film {
+        .filmografi {
+            h1 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 64px;
+                color: #000000;
+                margin-bottom: 50px;
+            }
+        }
+
+        .director {
+            h1 {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 60px;
+                color: #1C1C1C;
+                padding-bottom: 50px;
+                padding-top: 60px;
+                -webkit-text-stroke: 1px rgb(255, 255, 255);
+
+            }
+
+            .filmposter {
+                img {
+                    padding-left: 80px;
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+
+    .filmkomersil {
+        background-color: #1C1C1C;
+        margin-top: 50px;
+        padding-bottom: 70px;
+
+        h1 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 75px;
+            color: #1C1C1C;
+            padding-bottom: 20px;
+            padding-top: 50px;
+            -webkit-text-stroke: 1px rgb(255, 255, 255);
+        }
+
+        h2 {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            color: #ffffff;
+        }
+
+        p {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+        a {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            color: #ffffff;
+        }
+    }
+}
+
+// Mobile
